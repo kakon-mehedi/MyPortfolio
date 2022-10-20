@@ -192,13 +192,18 @@
 
 /* My Skill Section Starts */
 
-.my-skill-section {
-  height: 70vh;
-  width: 100%;
+.my-skill-title {
+  text-align: center;
+  padding: 30px 0;
 }
 
-.my-skill-section {
-  text-align: center;
+.skill-list {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 /* Project Section Starts */
@@ -207,6 +212,7 @@
   margin: 0 auto;
   width: 60%;
   text-align: center;
+  padding-top: 50px;
 }
 
 .project-list {
@@ -227,4 +233,37 @@
 
 .swiper-button-prev {
   color: #bb71f3;
+}
+
+/* Education Section Starts */
+
+.education-section-title {
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+.education-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Contact Section Starts */
+
+/* Footer Section Starts */
+
+.footer-list {
+  height: 80px;
+  width: 100%;
+  background-color: #273648;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-list-item {
+  margin: 5px;
+  cursor: pointer;
 }
