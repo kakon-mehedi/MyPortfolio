@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;700;900&display=swap");
+
+:root {
+  --primary: rebeccapurple;
+  --secondary: #5b21b6;
+  --background-color: #202a37;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: "Maven Pro", sans-serif;
+  color: white;
+}
