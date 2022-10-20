@@ -10,6 +10,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import ContactForm from "../../components/contactForm/ContactForm";
 
 import SkillCard from "../../components/skillCard/SkillCard";
+import { EducationData, ProjectData } from "../../data";
 import "./home.css";
 
 function Home() {
@@ -113,35 +114,19 @@ function Home() {
               modules={[Pagination, Navigation]}
               className="mySwiper"
             >
-              <SwiperSlide>
-                <a href="#projectLink">
-                  <img
-                    src="assets/images/projects/project-image01.png"
-                    className="project-img"
-                    alt="projectimg"
-                  />
-                </a>
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <a href="#projectLink">
-                  <img
-                    src="assets/images/projects/project-image02.png"
-                    className="project-img"
-                    alt="projectimg"
-                  />
-                </a>
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <a href="#projectLink">
-                  <img
-                    src="assets/images/projects/project-image03.png"
-                    className="project-img"
-                    alt="projectimg"
-                  />
-                </a>
-              </SwiperSlide>
+              {ProjectData.map((project) => {
+                return (
+                  <SwiperSlide key={project.id}>
+                    <a href={project.liveUrl}>
+                      <img
+                        src={project.url}
+                        className="project-img"
+                        alt="projectimg"
+                      />
+                    </a>
+                  </SwiperSlide>
+                );
+              })}
             </Swiper>
           </div>
         </div>
@@ -159,45 +144,17 @@ function Home() {
             modules={[FreeMode, Pagination]}
             className="mySwiper"
           >
-            <SwiperSlide>
-              <a href="#projectLink">
-                <img
-                  src="assets/images/projects/project-image01.png"
-                  className="education-img"
-                  alt="projectimg"
-                />
-              </a>
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <a href="#projectLink">
-                <img
-                  src="assets/images/projects/project-image02.png"
-                  className="education-img"
-                  alt="projectimg"
-                />
-              </a>
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <a href="#projectLink">
-                <img
-                  src="assets/images/projects/project-image03.png"
-                  className="education-img"
-                  alt="projectimg"
-                />
-              </a>
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <a href="#projectLink">
-                <img
-                  src="assets/images/projects/project-image03.png"
-                  className="education-img"
-                  alt="projectimg"
-                />
-              </a>
-            </SwiperSlide>
+            {EducationData.map((education) => {
+              return (
+                <SwiperSlide key={education.id}>
+                  <img
+                    src={education.url}
+                    className="education-img"
+                    alt="projectimg"
+                  />
+                </SwiperSlide>
+              );
+            })}
           </Swiper>
         </div>
 
