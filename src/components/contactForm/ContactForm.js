@@ -4,7 +4,6 @@ import React, { useRef, useState } from "react";
 import "./contact-form.css";
 
 function ContactForm() {
-  const [isEmailSent, setIsEmailSent] = useState(false);
   const [isSending, setIsSending] = useState(false);
   const [statusMsg, setStatusMsg] = useState("");
 
@@ -12,10 +11,8 @@ function ContactForm() {
 
   const showEmailSendingStatus = (status) => {
     if (status) {
-      setIsEmailSent(true);
       setStatusMsg("Message sent successfully!");
     } else {
-      setIsEmailSent(false);
       setStatusMsg("Sending Failed!");
     }
 
