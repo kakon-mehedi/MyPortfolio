@@ -14,4 +14,5 @@ export const EducationData = [
   { id: 5, url: "assets/images/education/5.jpg" },
   { id: 6, url: "assets/images/education/6.jpg" },
   { id: 7, url: "assets/images/education/7.jpeg" },
+  { id: 8, url: "assets/images/education/8.jpg" },
 ];

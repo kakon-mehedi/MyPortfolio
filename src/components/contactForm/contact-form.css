@@ -53,3 +53,7 @@ textarea {
   color: white;
   cursor: pointer;
 }
+
+.status-msg {
+  color: lightgray;
+}

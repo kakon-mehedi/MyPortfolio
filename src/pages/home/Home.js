@@ -39,7 +39,7 @@ function Home() {
             </li>
 
             <li className="nav-item">
-              <a href="#education">Education</a>
+              <a href="#education">Achievements</a>
             </li>
           </ul>
 
@@ -77,7 +77,7 @@ function Home() {
 
           <div className="about-right">
             <img
-              src="assets/images/15.png"
+              src="assets/images/kakon2.png"
               alt="kakonsPhoto"
               className="about-right-img"
             />
@@ -132,7 +132,9 @@ function Home() {
         </div>
 
         <div id="education" className="education-section">
-          <h1 className="education-section-title">Education and Experience</h1>
+          <h1 className="education-section-title">
+            Education, Experience & Achievements
+          </h1>
           <Swiper
             slidesPerView={2}
             spaceBetween={30}
@@ -150,7 +152,7 @@ function Home() {
                   <img
                     src={education.url}
                     className="education-img"
-                    alt="projectimg"
+                    alt="EducationImg"
                   />
                 </SwiperSlide>
               );
