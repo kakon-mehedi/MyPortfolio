@@ -4,51 +4,6 @@
   margin: 0 auto;
 }
 
-.navbar-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 60px;
-}
-
-.logo {
-  flex: 4;
-  cursor: pointer;
-  color: lightgray;
-}
-
-.navbar-list {
-  display: flex;
-  flex: 5;
-  list-style-type: none;
-}
-
-.navbar-list a {
-  text-decoration: none;
-  color: lightgrey;
-  margin-right: 10px;
-}
-
-.navbar-list a:hover {
-  text-decoration: none;
-  color: #bb71f3;
-}
-
-.nav-item {
-  margin-left: 10px;
-  cursor: pointer;
-  color: lightgray;
-  font-weight: bold;
-}
-
-.contact-link {
-  flex: 1;
-  text-decoration: none;
-  color: lightgray;
-  cursor: pointer;
-  font-weight: bold;
-}
-
 /* About Section Starts */
 
 .about-section {
@@ -171,6 +126,11 @@
   -o-transition: 0.3s;
 }
 
+.btn a {
+  text-decoration: none;
+  color: white;
+}
+
 .btn:hover {
   transform: scale(1.02);
   -webkit-transform: scale(1.02);
@@ -251,9 +211,6 @@
   width: 100%;
 }
 
-.swiper-slide {
-}
-
 .swiper-button-next {
   color: #bb71f3;
 }
@@ -297,29 +254,18 @@
 }
 
 @media (min-width: 1201px) {
-  .navbar-section {
-  }
-
   .about-section {
     height: 60vh;
   }
 }
 
 @media (max-width: 1200px) {
-  .navbar-section {
-    background-color: orange;
-  }
-
   .container {
     width: 80%;
   }
 }
 
 @media (max-width: 1024px) {
-  .navbar-section {
-    background-color: black;
-  }
-
   .container {
     width: 90%;
   }
@@ -335,10 +281,6 @@
 }
 
 @media (max-width: 768px) {
-  .navbar-section {
-    background-color: green;
-  }
-
   .container {
     width: 90%;
   }
@@ -404,7 +346,4 @@
 }
 
 @media (max-width: 480px) {
-  .navbar-section {
-    background-color: pink;
-  }
 }

@@ -1,5 +1,5 @@
 import { Description } from "@mui/icons-material";
-import React, { useState } from "react";
+import React from "react";
 
 import { FreeMode, Navigation, Pagination } from "swiper";
 import "swiper/css";
@@ -8,46 +8,20 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import ContactForm from "../../components/contactForm/ContactForm";
+import Navbar from "../../components/navbar/Navbar";
 
 import SkillCard from "../../components/skillCard/SkillCard";
 import { EducationData, ProjectData } from "../../data";
 import "./home.css";
 
 function Home() {
-  const [showNav, setShowNav] = useState(false);
-
   const handleScroll = (e) => {
     console.log("scroll is working");
   };
   return (
     <>
       <div className="container" onScroll={handleScroll}>
-        <div className="navbar-section">
-          <h3 className="logo">KakonMehedi</h3>
-
-          <ul className="navbar-list">
-            <li className="nav-item">
-              <a href="#about">About</a>
-            </li>
-
-            <li className="nav-item">
-              <a href="#skill">Skill</a>
-            </li>
-
-            <li className="nav-item">
-              <a href="#projects">Projects</a>
-            </li>
-
-            <li className="nav-item">
-              <a href="#education">Achievements</a>
-            </li>
-          </ul>
-
-          <a href="#contact" className="contact-link">
-            Contact
-          </a>
-        </div>
-
+        <Navbar />
         <div id="about" className="about-section">
           <div className="about-left">
             <div className="left-top-text">
@@ -72,7 +46,9 @@ function Home() {
               <Description className="resume-icon" />
               Download Resume
             </button>
-            <button className="btn btn-fq">Get a free quote</button>
+            <button className="btn btn-fq">
+              <a href="#contact">Get a free quote</a>
+            </button>
           </div>
 
           <div className="about-right">

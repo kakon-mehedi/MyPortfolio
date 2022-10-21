@@ -123,18 +123,3 @@ svg circle:nth-child(2) {
   stroke-dashoffset: calc(440 - (440 * 80) / 100);
   stroke: greenyellow;
 }
-
-@media (min-width: 320px) {
-  .skill-card {
-  }
-}
-@media (min-width: 481px) {
-}
-@media (min-width: 641px) {
-}
-@media (min-width: 961px) {
-}
-@media (min-width: 1025px) {
-}
-@media (min-width: 1281px) {
-}
