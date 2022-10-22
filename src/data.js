@@ -3,7 +3,6 @@ export const ProjectData = [
   { id: 2, url: "assets/images/projects/2.png", liveUrl: "#projectData" },
   { id: 3, url: "assets/images/projects/3.png", liveUrl: "#projectData" },
   { id: 4, url: "assets/images/projects/4.png", liveUrl: "#projectData" },
-  { id: 5, url: "assets/images/projects/5.png", liveUrl: "#projectData" },
 ];
 
 export const EducationData = [

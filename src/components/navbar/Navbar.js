@@ -13,7 +13,7 @@ function Navbar() {
       <h3 className="logo">KakonMehedi</h3>
       <Menu className="menu-icon" onClick={handleMenuClick} />
 
-      <ul className={menuClicked ? "navbar-list" : "navbar-list active"}>
+      <ul className={menuClicked ? "navbar-list active" : "navbar-list"}>
         <li className="nav-item">
           <a href="#about">About</a>
         </li>
